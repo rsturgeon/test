@@ -11,14 +11,19 @@ import javax.ws.rs.core.MediaType;
  * Created by nhristov on 1/14/14.
  */
 public interface UserService {
-    @Path("users")
-    @GET
-    @Produces({MediaType.APPLICATION_JSON})
-    String listUsers();
+  @Path("users")
+  @GET
+  @Produces({MediaType.APPLICATION_JSON})
+  String listUsers();
 
-    @Path("user/{id}")
-    @DELETE
-    @Produces({MediaType.APPLICATION_JSON})
-    String deleteUser(@PathParam("id") String id);
+  @Path("user/{id}")
+  @DELETE
+  @Produces({MediaType.APPLICATION_JSON})
+  String deleteUser(@PathParam("id") String id);
+
+  @Path("user/{id}")
+  @GET
+  @Produces({MediaType.APPLICATION_JSON})
+  String getUser(@PathParam("id") String id);
 
 }
