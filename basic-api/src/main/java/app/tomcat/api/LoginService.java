@@ -12,6 +12,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
+ * Adding comment here
  * @author "Nick Hristov" <nhristov@tidemark.net>
  */
 @Path("LoginService")
